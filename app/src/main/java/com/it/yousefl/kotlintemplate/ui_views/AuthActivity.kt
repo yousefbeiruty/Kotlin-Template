@@ -58,11 +58,11 @@ class AuthActivity : AppCompatActivity() ,View.OnClickListener{
                             Constants.ID,
                             dataState.data.id
                         )
-//                        Utils.goToActivityWithAnimation(
-//                            this@AuthActivity,
-//                            MainActivity::class.java,
-//                            true
-//                        )
+                        Utils.goToActivityWithAnimation(
+                            this@AuthActivity,
+                            MainActivity::class.java,
+                            true
+                        )
                     } else {
                         Utils.getDialog(this@AuthActivity, "", "Wrong password or username !!!")
                     }
