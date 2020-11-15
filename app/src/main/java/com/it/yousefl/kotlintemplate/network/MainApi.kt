@@ -8,5 +8,5 @@ import retrofit2.http.Url
 interface MainApi {
 
     @GET
-    fun getOrders(@Url url: String?): Flowable<List<Orders?>?>?
+    suspend fun getOrders(@Url url: String?): List<OrdersNetworkEntity>
 }

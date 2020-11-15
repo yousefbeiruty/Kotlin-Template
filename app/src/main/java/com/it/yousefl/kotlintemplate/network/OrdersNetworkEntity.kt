@@ -6,32 +6,32 @@ import com.google.gson.annotations.SerializedName
 data class OrdersNetworkEntity(
     @Expose
     @SerializedName("billno")
-    private var billno: Int? = null,
+     var billno: Int ,
     @SerializedName("billdate")
     @Expose
-    private val billdate: String? = null,
+     var billdate: String,
 
     @SerializedName("mobile")
     @Expose
-    private val mobile: String? = null,
+    var mobile: String,
 
     @SerializedName("longitude")
     @Expose
-    private val longitude: Double? = null,
+    var longitude: Double,
 
     @SerializedName("latitude")
     @Expose
-    private val latitude: Double? = null,
+    var latitude: Double,
 
     @SerializedName("address")
     @Expose
-    private val address: String? = null,
+    var address: String,
 
     @SerializedName("status")
     @Expose
-    private val status: String? = null,
+    var status: String,
 
     @SerializedName("companyid")
     @Expose
-    private val companyid: Int? = null
+    var companyid: Int
 )

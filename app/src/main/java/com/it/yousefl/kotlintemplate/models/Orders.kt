@@ -4,12 +4,12 @@ import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
 data class Orders(
-    private val billno: Int,
-    private val billdate: String,
-    private val mobile: String,
-    private val longitude: Double,
-    private val latitude: Double,
-    private val address: String,
-    private val status: String,
-    private val companyid: Int,
+    var billno: Int,
+    var billdate: String,
+    var mobile: String,
+    var longitude: Double,
+    var latitude: Double,
+    var address: String,
+    var status: String,
+    var companyid: Int,
 )
