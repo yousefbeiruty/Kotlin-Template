@@ -12,9 +12,9 @@ import javax.inject.Singleton
 @Module
 object MainModule {
 
-    @Singleton
-    @Provides
-     fun provideMainApi(retrofit: Retrofit): MainApi? {
-        return retrofit.create(MainApi::class.java)
-    }
+//    @Singleton
+//    @Provides
+//     fun provideMainApi(retrofit: Retrofit): MainApi? {
+//        return retrofit.create(MainApi::class.java)
+//    }
 }

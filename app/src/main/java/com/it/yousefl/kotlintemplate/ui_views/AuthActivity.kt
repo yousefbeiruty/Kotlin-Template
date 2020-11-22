@@ -31,6 +31,9 @@ class AuthActivity : AppCompatActivity() ,View.OnClickListener{
 
         binding.btn.setOnClickListener(this)
 
+        if (Utils.getValue(this,Constants.IS_REGISTERED,false)){
+            Utils.goToActivity(this,MainActivity::class.java,true)
+        }
 
 
     }
@@ -58,6 +61,7 @@ class AuthActivity : AppCompatActivity() ,View.OnClickListener{
                             Constants.ID,
                             dataState.data.id
                         )
+                        Utils.setValue(this,Constants.IS_REGISTERED,true)
                         Utils.goToActivityWithAnimation(
                             this@AuthActivity,
                             MainActivity::class.java,
